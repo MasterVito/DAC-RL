@@ -1,0 +1,27 @@
+You are given a challenging math problem and its decomposition into subproblems.
+
+## Your task is to:
+
+1. Solve the **subproblems sequentially** (in the given order).
+2. Show detailed reasoning for each subproblem.
+3. **Do not use `\\boxed{}` when solving subproblems.**
+4. After solving all subproblems, combine their results to solve the **original problem**.
+5. Present the final answer to the original problem **only once, enclosed in `\boxed{}`**.
+
+## Input
+
+**Original Problem:**
+{Original}
+
+**Subproblems:**
+
+{Subproblems}
+
+## Final Instruction
+
+* First, go through the subproblems one by one with detailed reasoning.
+* Finally, derive the answer to the **original problem** and present it in the format:
+
+$$
+\\boxed{\\text{final answer here}}
+$$
