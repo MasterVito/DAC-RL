@@ -75,7 +75,7 @@ We recommend using [Conda](https://docs.conda.io/projects/miniconda) to manage y
 ```sh
 conda create -n svs python=3.10.16
 conda activate svs
-pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu126 # CUDA 12.6 for example
+pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu128 # CUDA 12.6 for example
 pip install -r requirements.txt
 ```
 
