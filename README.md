@@ -1,5 +1,5 @@
 <h1 align="center">
-Training LLMs for Divide-and-Conquer Reasoning
+Training LLMs for Divide-and-Conquer Reasoning Elevates Test-Time Scalability
 </h1>
 
 <div align="center">
