@@ -58,7 +58,6 @@ We propose an end-to-end reinforcement learning framework that trains LLMs to pe
 | Model | AIME 2024 |  | AIME 2025 |  | Beyond-AIME |  | HMMT 2025 |  | Average |  |
 |-------|-----------|-----------|-----------|-----------|-------------|-----------|-----------|-----------|----------|----------|
 |       | Pass@1 | Pass@32 | Pass@1 | Pass@32 | Pass@1 | Pass@32 | Pass@1 | Pass@32 | Pass@1 | Pass@32 |
-| **Qwen3-4B-Instruct-2507** |  |  |  |  |  |  |  |  |  |  |
 | Init-CoT | 62.6 | 90.0 | 45.7 | 76.7 | 32.1 | 65.0 | 30.3 | 56.7 | 42.7 | 72.1 |
 | Init-DAC | 59.6 | 90.0 | 43.2 | 73.3 | 29.6 | 61.0 | 28.2 | 63.3 | 40.2 | 71.9 |
 | RL-CoT | 45.9 | 85.8 | 52.1 | 77.4 | 30.4 | 58.1 | 21.8 | 54.4 | 37.5 | 69.0 |
