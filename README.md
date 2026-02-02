@@ -55,7 +55,7 @@ We propose an end-to-end reinforcement learning framework that trains LLMs to pe
 
 ## 📊 Experiments on <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507">Qwen3-4B-Instruct-2507</a>
 
-| Model | AIME 2024 |  | AIME 2025 |  | Beyond-AIME |  | HMMT 2025 |  | Average |  |
+| Model | AIME 2024 | ~ | AIME 2025 | ~ | Beyond-AIME | ~ | HMMT 2025 | ~ | Average | ~ |
 |-------|-----------|-----------|-----------|-----------|-------------|-----------|-----------|-----------|----------|----------|
 |       | Pass@1 | Pass@32 | Pass@1 | Pass@32 | Pass@1 | Pass@32 | Pass@1 | Pass@32 | Pass@1 | Pass@32 |
 | Init-CoT | 62.6 | 90.0 | 45.7 | 76.7 | 32.1 | 65.0 | 30.3 | 56.7 | 42.7 | 72.1 |
