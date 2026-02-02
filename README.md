@@ -23,7 +23,6 @@ Training LLMs for Divide-and-Conquer Reasoning
 Repo for "<a href="https://arxiv.org/pdf/2508.14029v1" target="_blank">Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains RLVR</a>"
 </p> -->
 
-<br>
 
 <p align="center">
     <img src="assets/DAC-RL-Main.png" width="1000">
@@ -47,9 +46,12 @@ Repo for "<a href="https://arxiv.org/pdf/2508.14029v1" target="_blank">Beyond Pa
 
 <!-- <br> -->
 
+<br>
+
 ## 💡 Introduction 
 We propose an end-to-end reinforcement learning framework that trains LLMs to perform divide-and-conquer (DAC) reasoning, which substantially improves downstream performance and test-time scalability on challenging reasoning tasks.
 
+<br>
 
 ## 📊 Experiments on Qwen3-4B-Instruct-2507
 
@@ -63,6 +65,7 @@ We propose an end-to-end reinforcement learning framework that trains LLMs to pe
 | **RL-DAC** | **63.9** | **87.7** | **54.2** | **78.8** | **34.6** | **67.9** | **31.9** | **66.6** | **46.1** | **75.3** |
 | **∆ (RL)** | **+18.0** | **+1.9** | **+2.1** | **+1.4** | **+4.2** | **+9.8** | **+10.1** | **+12.2** | **+8.6** | **+6.3** |
 
+<br>
 
 ## 🚀 Quick Start
 
@@ -77,6 +80,8 @@ pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu126 # CU
 pip install -r requirements.txt
 ```
 
+<br>
+
 ### 🪁 Evaluation
 
 We provide evaluation scripts for both **CoT** and **DAC** inference. To use them, simply configure the `model_name_or_path` (default: `Qwen/Qwen3-4B-Instruct-2507`) and the `data_path` (by default, AIME 24, AIME 25, Beyond-AIME, and HMMT-25 are used for evaluation, as described in the paper) in [`scripts/eval_cot.sh`](scripts/eval_cot.sh) and [`scripts/eval_dac.sh`](scripts/eval_dac.sh), and then run the following command:
@@ -87,6 +92,8 @@ bash scripts/eval_cot.sh
 bash scripts/eval_dac.sh
 ```
 
+<br>
+
 ### ⚡️ Training
 We also present our complete training scripts for the community. We provide the training data used in our paper in [data](data). 
 For example, to train the <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507">Qwen3-4B-Instruct-2507</a> model, run the following command:
@@ -94,6 +101,8 @@ For example, to train the <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct
 ```sh
 bash scripts/run_dac_training.sh
 ```
+
+<br>
 
 ## ☕️ Citation
 
