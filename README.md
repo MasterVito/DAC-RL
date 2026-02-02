@@ -87,14 +87,14 @@ We provide evaluation scripts for both **CoT** and **DAC** inference. To use the
 
 
 ```sh
-bash scripts/eval_cot.sh
-bash scripts/eval_dac.sh
+bash scripts/eval_cot.sh # Evaluate model performance using chain-of-thought prompting
+bash scripts/eval_dac.sh # Evaluate model performance using divide-and-conquer style reasoning
 ```
 
 <br>
 
 ### ⚡️ Training
-We also present our complete training scripts for the community. We provide the training data used in our paper in [data](data). 
+We also present our complete training scripts, where the core implementation is the `RayDACTrainer` class in the `verl/trainer/ppo/ray_trainer.py` file. We provide the training data used in our paper in [data](data). 
 For example, to train the <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507">Qwen3-4B-Instruct-2507</a> model, run the following command:
 
 ```sh
