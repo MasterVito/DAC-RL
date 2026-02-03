@@ -10,13 +10,13 @@ Training LLMs for Divide-and-Conquer Reasoning Elevates Test-Time Scalability
 
 </div>
 
-<!-- <p align="center">
-  <a href=""><b>[📜 Paper]</b></a> •
-  <a href="https://github.com/MasterVito/SvS"><b>[🐱 GitHub]</b></a> •
-  <a href="https://x.com/MasterVito0601/status/1959960582670766411"><b>[🐦 Twitter]</b></a> •
-  <a href="https://www.xiaohongshu.com/discovery/item/68ac220f000000001d03b785?source=webshare&xhsshare=pc_web&xsec_token=ABgRNEq2SWHDpaqHQVIdEoTMd8NOnA-NAuilqp1VyEn0Y=&xsec_source=pc_share"><b>[📕 Rednote]</b></a>
+<p align="center">
+  <a href="https://arxiv.org/abs/2602.02477"><b>[📜 Paper]</b></a> •
+  <a href="https://github.com/MasterVito/DAC-RL"><b>[🐱 GitHub]</b></a> •
+  <a href=""><b>[🐦 Twitter]</b></a> •
+  <a href=""><b>[📕 Rednote]</b></a>
 </p>
- -->
+
 
 
 <!-- <p align="center">
@@ -46,7 +46,6 @@ Repo for "<a href="https://arxiv.org/pdf/2508.14029v1" target="_blank">Beyond Pa
 
 <!-- <br> -->
 
-<br>
 
 ## 💡 Introduction 
 We propose an end-to-end reinforcement learning framework that trains LLMs to perform divide-and-conquer (DAC) reasoning, which substantially improves downstream performance and test-time scalability on challenging reasoning tasks.
@@ -108,6 +107,15 @@ bash scripts/run_dac_training.sh
 If you find this repository helpful, please consider citing our paper:
 
 ```
+@misc{liang2026trainingllmsdivideandconquerreasoning,
+      title={Training LLMs for Divide-and-Conquer Reasoning Elevates Test-Time Scalability}, 
+      author={Xiao Liang and Zhong-Zhi Li and Zhenghao Lin and Eric Hancheng Jiang and Hengyuan Zhang and Yelong Shen and Kai-Wei Chang and Ying Nian Wu and Yeyun Gong and Weizhu Chen},
+      year={2026},
+      eprint={2602.02477},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2602.02477}, 
+}
 ```
 <br>
 
