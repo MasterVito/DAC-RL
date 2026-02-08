@@ -126,8 +126,7 @@ Each line is a JSON object with keys:
 
 The training script expects a parquet like `data/DAPO-Math-17k.parquet`. One simple way to download & save as parquet:
 
-```bash
-python - <<'PY'
+```python
 from datasets import load_dataset
 import pandas as pd
 
@@ -136,7 +135,6 @@ ds = load_dataset('BytedTsinghua-SIA/DAPO-Math-17k')
 train = ds['train'].to_pandas()
 train.to_parquet('data/DAPO-Math-17k.parquet', index=False)
 print('saved:', 'data/DAPO-Math-17k.parquet', 'rows:', len(train))
-PY
 ```
 
 ---
