@@ -66,9 +66,8 @@ At a high level, DAC-RL alternates between two *roles* (not necessarily two sepa
 
 The repo implements this as a single training loop that creates two rollout batches per iteration (**divide** and **conquer**) and assigns rewards to both.
 
-### Pipeline (conceptual)
 
-```mermaid
+```
 flowchart TD
   Q[Original question] --> D[Divide prompt: propose subproblems]
   D --> S[Parse & validate subproblems]
