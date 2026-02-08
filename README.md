@@ -9,7 +9,6 @@ Training LLMs for Divide-and-Conquer Reasoning Elevates Test-Time Scalability
 ![](https://img.shields.io/badge/Code%20License-MIT-green)
 
 </div>
-
 <p align="center">
   <a href="https://arxiv.org/abs/2602.02477"><b>[📜 Paper]</b></a> •
   <a href="https://github.com/MasterVito/DAC-RL"><b>[🐱 GitHub]</b></a> •
@@ -65,7 +64,6 @@ At a high level, DAC-RL alternates between two *roles* (not necessarily two sepa
 - **Conquer stage**: solve subproblems sequentially and then solve the original problem, outputting a final boxed answer.
 
 The repo implements this as a single training loop that creates two rollout batches per iteration (**divide** and **conquer**) and assigns rewards to both.
-
 
 ```
 flowchart TD
@@ -149,7 +147,6 @@ PY
 
 We provide evaluation scripts for both **CoT** and **DAC** inference. To use them, simply configure the `model_name_or_path` (default: `Qwen/Qwen3-4B-Instruct-2507`) and the `data_path` (by default, AIME 24, AIME 25, Beyond-AIME, and HMMT-25 are used for evaluation, as described in the paper) in [`scripts/eval_cot.sh`](scripts/eval_cot.sh) and [`scripts/eval_dac.sh`](scripts/eval_dac.sh), and then run the following command:
 
-
 ```sh
 bash scripts/eval_cot.sh # Evaluate model performance using chain-of-thought prompting
 bash scripts/eval_dac.sh # Evaluate model performance using divide-and-conquer style reasoning
@@ -158,6 +155,7 @@ bash scripts/eval_dac.sh # Evaluate model performance using divide-and-conquer s
 DAC evaluation does two-stage generation:
 1) divide prompt → generate subproblems
 2) conquer prompt → solve and answer original
+
 ---
 
 ### ⚡️ Training
@@ -168,6 +166,7 @@ For example, to train the <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct
 ```sh
 bash scripts/run_dac_training.sh
 ```
+
 **Which file implements DAC training?** - [verl/trainer/ppo/ray_trainer.py](verl/trainer/ppo/ray_trainer.py) → `RayDACTrainer`.
 
 DAC-specific reward controls: These parameters directly encode the paper’s training-time alignment to DAC inference.
@@ -179,8 +178,6 @@ DAC-specific reward controls: These parameters directly encode the paper’s tra
 | `data.stop_divide` | `false` | training | If `true`, only train on conquer samples (ignore divide samples) | Useful for ablations; for full DAC-RL keep `false`. |
 | `data.max_prompt_length` | `4096` | training | Max tokens for prompts (after chat template) | Must accommodate divide/conquer prompts. Overlong samples are filtered. |
 | `data.max_response_length` | `8192` | training | Max generation tokens during rollouts | DAC often benefits from longer outputs (esp. conquer stage). |
-
-
 
 ---
 
