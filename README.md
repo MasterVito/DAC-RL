@@ -65,18 +65,6 @@ At a high level, DAC-RL alternates between two *roles* (not necessarily two sepa
 
 The repo implements this as a single training loop that creates two rollout batches per iteration (**divide** and **conquer**) and assigns rewards to both.
 
-```
-flowchart TD
-  Q[Original question] --> D[Divide prompt: propose subproblems]
-  D --> S[Parse & validate subproblems]
-  S --> C[Conquer prompt: solve subproblems then original]
-  C --> R[Rule-based verifier: answer correctness]
-  R --> RC[Conquer reward]
-  RC --> RD[Divide reward (derived from conquer outcomes)]
-  RC --> PPO[PPO/GRPO-style policy update]
-  RD --> PPO
-```
-
 
 <!-- ## 💡 Introduction 
 We propose an end-to-end reinforcement learning framework that trains LLMs to perform divide-and-conquer (DAC) reasoning, which substantially improves downstream performance and test-time scalability on challenging reasoning tasks. -->
