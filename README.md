@@ -183,7 +183,3 @@ If you find this repository helpful, please consider citing our paper:
 ## 📄 License
 
 This project is released under the **Apache License 2.0**. See [LICENSE](LICENSE).
-
-## 🌟 Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=mastervito/DAC-RL&type=Date)](https://star-history.com/#mastervito/DAC-RL&Date)
